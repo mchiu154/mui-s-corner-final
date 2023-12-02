@@ -1,0 +1,645 @@
+ @media screen and (min-width: 600px){
+    header {
+    flex-direction: row;
+    text-align: center;
+    }
+ }
+
+ /* Code copied from: https://noonnu.cc/font_page/56
+ Author: noonnu.cc
+ Name: BMKIRANGHAERANG font
+ Description: loads in BMKIRANGHAERANG font
+ Date retrieved: Nov. 27, 2023
+ */
+
+/* copied code starts */
+ @font-face {
+     font-family: "BMKIRANGHAERANG";
+     src: url("https://d1mphx2csg3pcg.cloudfront.net/fonts/BMKIRANGHAERANG-OTF.otf") format("opentype");
+     font-weight: normal;
+     font-style: normal;
+ }
+ /*copied code ends*/
+
+ #header {
+     color: black;
+     background-color: #e1d6ea;
+     font-family: "Nanum Pen Script";
+     font-weight: lighter;
+     font-size: 30px;
+     width: 100%;
+     padding: 10px;
+     text-align: left;
+     display: flex;
+     align-items: center;
+ }
+
+ #header img {
+     margin-left: 10px;
+     margin-right: 20px;
+     width: 80px;
+ }
+
+ #subpages ul {
+     margin-top: 0;
+     background-color: #fff2e2;
+     position: relative;
+     display: flex;
+     justify-content: space-evenly;
+     list-style-type: none;
+     align-items: center;
+     padding: 0;
+ }
+
+ #subpages li {
+     margin-top: 70px;
+     margin-right: 10%;
+     text-align: center;
+ }
+
+ #subpages img {
+     width: 100%;
+     margin-right: 50px;
+     margin-left: 35%;
+ }
+
+ #create {
+     margin-left: 12%;
+     text-align: center;
+     position: relative;
+     z-index: 0;
+     margin: 70px 50px 0 50px;
+ }
+
+ #create img {
+    width: 100%;
+ }
+
+ #blockA {
+     background-color: #d2cce2;
+     border-radius: 30px;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     text-align: center;
+     z-index: -1;
+     margin-right: 60px;
+ }
+
+ .bgpic {
+     position: relative;
+     background-color: white;
+     margin-top: 100px;
+ }
+
+ .bgpic img {
+     width: 100%;
+     height: auto;
+     z-index: -1;
+ }
+
+ .pricesandquotes {
+     position: absolute;
+     color: black;
+     font-family: "Nanum Pen Script";
+     font-size: 5vw;
+     top: 10%;
+     left: 50%;
+     transform: translateX(-50%);
+     text-align: center;
+     white-space: nowrap;
+     z-index: 2;
+ }
+
+ .servicenames {
+     position: absolute;
+     color: black;
+     font-family: "Avenir";
+     font-size: 2vw;
+     top: 17%;
+     left: 17%;
+     margin-left: 2vw;
+     white-space: nowrap;
+     z-index: 2;
+     line-height: 4vw;
+ }
+
+ .prices {
+     position: absolute;
+     color: black;
+     font-family: "Avenir";
+     font-size: 2vw;
+     top: 17%;
+     margin-right: 20%;
+     right: 2vw;
+     white-space: nowrap;
+     z-index: 2;
+     line-height: 4vw;
+ }
+
+ .additionalcharges {
+     font-style: italic;
+     position: absolute;
+     color: black;
+     font-family: "Avenir";
+     font-size: 2vw;
+     top: 80%;
+     left: 50%;
+     transform: translateX(-50%);
+     text-align: left;
+     white-space: nowrap;
+     z-index: 2;
+     line-height: 4vw;
+ }
+
+ body {
+     color: black;
+     background-color: #fff2e2;
+     background-position: center;
+     font-family: "BMKIRANGHAERANG", Georgia, Times, serif;
+     margin: 0;
+ }
+
+ #footer {
+     background-color: #fcfcfc;
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     box-sizing: border-box;
+     margin-top: 200px;
+ }
+
+ #footer img {
+     width: 55px;
+     height: 50px;
+     margin-top: 50px;
+ }
+
+ #footer h1 {
+     color: black;
+     font-size: 60px;
+     font-family: "Nanum Pen Script";
+     margin-top: 20px;
+ }
+
+ #footer p span {
+     color: black;
+     font-size: 20px;
+     font-family: "Big Caslon Medium";
+     white-space: nowrap;
+     text-align: center;
+     word-spacing: 2vw;
+     margin-right: 3vw;
+ }
+
+ #footer p {
+    line-height: 2;
+ }
+
+ #footer p .about {
+    word-spacing: 0.1em;
+}
+
+ #footer p .terms {
+    word-spacing: 0.1em;
+ }
+
+ #footer p .privacy {
+    margin-left: 25%;
+ }
+
+#footer .copyright {
+     display: flex;
+     position: relative;
+     align-items: center;
+     margin-top: 30px;
+     margin-bottom: 20px;
+     font-size: 25px;
+     font-family: "BMKIRANGHAERANG";
+ }
+
+ #subcontainer {
+     background-color: #b2a8c6;
+     border-radius: 30px;
+     width: 400px;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center; 
+     position: relative;
+     margin-top: 1.5vh;
+     z-index: 1;
+ }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #ebd6ff;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+}
+
+ #footerMain {
+     background-color: #fcfcfc;
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     box-sizing: border-box;
+ }
+
+ #footerMain img {
+     width: 55px;
+     height: 50px;
+     margin-top: 50px;
+ }
+
+ #footerMain h1 {
+     color: black;
+     font-size: 60px;
+     font-family: "Nanum Pen Script";
+     margin-top: 20px;
+ }
+
+ #footerMain p span {
+     color: black;
+     font-size: 20px;
+     font-family: "Big Caslon Medium";
+     white-space: nowrap;
+     text-align: center;
+     word-spacing: 2vw;
+     margin-right: 3vw;
+ }
+
+ #footerMain p {
+    line-height: 2;
+ }
+
+ #footerMain p .about {
+    word-spacing: 0.1em;
+}
+
+ #footerMain p .terms {
+    word-spacing: 0.1em;
+ }
+
+ #footerMain p .privacy {
+    margin-left: 25%;
+ }
+
+ 
+ #footerMain .copyright {
+     display: flex;
+     position: relative;
+     align-items: center;
+     margin-top: 30px;
+     margin-bottom: 20px;
+     font-size: 25px;
+     font-family: "BMKIRANGHAERANG";
+ }
+
+ /*about*/
+
+ #bigaboutblock {
+     background-color: #b2a8c6;
+     border-radius: 30px;
+     width: 1400px;
+     height: 800px;
+     position: absolute;
+     text-align: center;
+     margin-top: 50px;
+     margin-right: 50px;
+     margin-bottom: 50px;
+     margin-left: 50px;
+     z-index: -1;
+ }
+
+ #aboutpage p {
+     font-family: "Nanum Pen Script";
+     font-size: 75px;
+     color: white;
+     position: absolute;
+     margin-top: 180px;
+     margin-left: 620px;
+     white-space: nowrap;
+ }
+
+ #aboutpage p1 {
+     font-family: "Avenir";
+     font-size: 25px;
+     color: white;
+     position: absolute;
+     margin-top: 380px;
+     margin-left: 50px;
+     margin-right: 50px;
+     margin-bottom: 50px;
+ }
+
+ #makimage {
+     float: left;
+     width: 500px;
+     margin-left: 75px;
+     margin-top: 120px;
+     margin-bottom: 70px;
+ }
+
+ #aboutcontainer {
+     display: flex;
+     margin-top: 900px;
+     margin-left: 50px;
+ }
+
+ #aboutbuildergel {
+     float: left;
+     margin-top: 50px;
+     padding: 20px;
+     background-color: #ebd6ff;
+     border-radius: 20px;
+    text-align: center;
+ }
+
+ #aboutbuildergel p {
+     font-family: "Nanum Pen Script";
+     font-size: 40px;
+    text-align: center;
+     margin-left: -10px;
+ }
+
+ #aboutbuildergel p1 {
+     font-family: "Avenir";
+     font-size: 25px;
+    text-align: center;
+
+ }
+
+ #myspecialty {
+     margin-left: 75px;
+     margin-top: 50px;
+     font-size: 30px;
+     padding: 20px;
+     background-color: #ebd6ff;
+     border-radius: 20px;
+     text-align: center;
+}
+
+ #myspecialty p {
+     font-family: "Nanum Pen Script";
+     font-size: 40px;
+    text-align: center;
+ }
+
+ #myspecialty p1 {
+     font-family: "Avenir";
+     font-size: 25px;
+    text-align: center;
+ }
+
+ #aboutgelx {
+     float: right;
+     margin-right: 50px;
+     margin-left: 75px;
+     margin-top: 50px;
+   
+     font-size: 30px;
+     padding: 20px;
+     background-color: #ebd6ff;
+     border-radius: 20px;
+    text-align: center;
+
+ }
+
+ #aboutgelx p {
+     font-family: "Nanum Pen Script";
+     font-size: 40px;
+          text-align: center;
+ }
+
+ #aboutgelx p1 {
+     font-family: "Avenir";
+     font-size: 25px;
+          text-align: center;
+
+ }
+
+/*connect*/
+.containerConnect {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40%; /* Adjust the width as needed */
+    margin: 220px auto;
+    margin-left: 700px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #b2a8c6;
+    font-family: "Nanum Pen Script";
+    font-size: 30px;
+}
+
+#icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#icons #ig {
+    width: 300px;
+    margin-top: -800px;
+    margin-left: 200px;
+
+}
+
+#icons #gmail {
+    width: 160px;
+    margin-top: 80px;
+    margin-left: 130px;
+}
+
+#icons #twitter {
+    width: 140px;
+    margin-top: -630px;
+    margin-left: 420px;
+}
+
+#icons .scan {
+    font-size: 30px;
+    margin-top: -620px;
+    margin-left: 100px;
+    color: #b2a8c6;
+    font-family: "Nanum Pen Script";
+}
+
+#icons .send {
+      font-size: 30px;
+    margin-bottom: 20px;
+    color: #b2a8c6;
+    font-family: "Nanum Pen Script";
+}
+
+#icons .follow {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #b2a8c6;
+    font-family: "Nanum Pen Script";
+}
+
+#icons .scan {
+    margin-left: 230px;
+}
+
+#icons .send {
+    margin-left: 120px;
+    margin-top: 380px;
+}
+
+#icons .follow {
+    margin-left: 380px;
+    margin-top: -55px;
+}
+
+/*gallery*/
+
+ #pics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+#pics img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+
+#pics .nails {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-family: "Avenir";
+    display: block; 
+}
+
+/*booking*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #ebd6ff;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+}
+
+.containerBooking {
+    width: 50%;
+    margin: 100px auto;
+    border-radius: 5px;
+    background-color: #b2a8c6;
+    padding: 30px;
+    border-radius: 20px;
+    font-family: "Nanum Pen Script";
+    font-size: 30px;
+}
+
+ #footerConnect {
+     background-color: #fcfcfc;
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 20px;
+     box-sizing: border-box;
+ }
+
+ #footerConnect img {
+     width: 55px;
+     height: 50px;
+     margin-top: 50px;
+ }
+
+ #footerConnect h1 {
+     color: black;
+     font-size: 60px;
+     font-family: "Nanum Pen Script";
+     margin-top: 20px;
+ }
+
+ #footerConnect p span {
+     color: black;
+     font-size: 20px;
+     font-family: "Big Caslon Medium";
+     white-space: nowrap;
+     text-align: center;
+     word-spacing: 2vw;
+     margin-right: 3vw;
+ }
+
+ #footerConnect p {
+    line-height: 2;
+ }
+
+ #footerConnect p .about {
+    word-spacing: 0.1em;
+}
+
+ #footerConnect p .terms {
+    word-spacing: 0.1em;
+ }
+
+ #footerConnect p .privacy {
+    margin-left: 25%;
+ }
+
+ 
+ #footerConnect .copyright {
+     display: flex;
+     position: relative;
+     align-items: center;
+     margin-top: 30px;
+     margin-bottom: 20px;
+     font-size: 25px;
+     font-family: "BMKIRANGHAERANG";
+ }
